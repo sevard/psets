@@ -1,0 +1,56 @@
+sort1 uses: bubble sort.
+
+How do you know?:
+    Among the other three algorithms, this one shows the worse time to finish.
+    Bubble sort's complexity is big O(n ** 2) and Omega(n ** 2)
+
+    random5000 => 0.072s
+   random10000 => 0.204s
+   random50000 => 6.010s
+
+    sorted5000 => 0.059.s
+   sorted10000 => 0.082.s
+   sorted50000 => 0.531.s
+
+  reversed5000 => 0.086s
+ reversed10000 => 0.289s
+ reversed50000 => 4.963s
+
+sort2 uses: merge sort.
+
+How do you know?:
+    Among the other three algorithms, it shows the fastest time to finish .
+    It also shows consistent performance time across random, sorted, and reversed input.
+    The results are corresponding to merge sort complexity which is O(n log n), Omega(n log n).
+
+    random5000 => 0.055s
+   random10000 => 0.079s
+   random50000 => 0.510s
+
+    sorted5000 => 0.044s
+   sorted10000 => 0.079s
+   sorted50000 => 0.596s
+
+  reversed5000 => 0.044s
+ reversed10000 => 0.080s
+ reversed50000 => 0.662s
+
+sort3 uses: selection sort.
+
+How do you know?:
+    Among the other three algorithms, this one performs worse than 'sort2' and slightly better than 'sort1'.
+    It takes a bit less time than 'sort1' to finish sorting the reversed input.
+    Same as 'sort1' it shows consistent time across all the 3 inputs.
+    Selection sort's has the same complexity as Bubble sort which is big O(n ** 2) and Omega(n ** 2)
+
+    random5000 => 0.052s
+   random10000 => 0.134s
+   random50000 => 2.252s
+
+    sorted5000 => 0.058s
+   sorted10000 => 0.200s
+   sorted50000 => 2.290s
+
+  reversed5000 => 0.050s
+ reversed10000 => 0.150s
+ reversed50000 => 2.535s

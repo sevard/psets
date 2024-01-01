@@ -1,0 +1,35 @@
+Algorithm invented by Hans Peter Luhn of IBM
+
+* Multiply every other digit by 2, starting with second-to-last digit.
+* Add those products' digit together.
+* Add the sum to the sum of the digits that weren't multiplied by 2.
+* If the total's last digit is 0, number is valid!
+
+For the sake of discussion, let’s first underline every other digit, starting with the number’s second-to-last digit:
+ 4003600000000014
+
+Okay, let’s multiply each of the underlined digits by 2:
+ 1•2 + 0•2 + 0•2 + 0•2 + 0•2 + 6•2 + 0•2 + 4•2
+
+That gives us:
+ 2 + 0 + 0 + 0 + 0 + 12 + 0 + 8
+
+Now let’s add those products’ digits (i.e., not the products themselves) together:
+  2 + 0 + 0 + 0 + 0 + 1 + 2 + 0 + 8 = 13
+
+Now let’s add that sum (13) to the sum of the digits that weren’t multiplied by 2 (starting from the end):
+ 13 + 4 + 0 + 0 + 0 + 0 + 0 + 3 + 0 = 20
+
+Yup, the last digit in that sum (20) is a 0, so David’s card is legit!
+
+American Express numbers start with 34, 37
+MasterCard numbers start with 51, 52, 53, 54, 55
+Visa numbers start with 4
+
+Get user imput
+Start iterating over digits from second-to-last and to the start
+Muliply every second digit by 2 and store the result
+Start iterating over digits from the last digits and to the start
+Sum every second digit and store the result
+Add two sums together and modulo 10
+If result is 0 -> pass

@@ -1,0 +1,6 @@
+hello
+this is a test file 
+the file is just a text file
+why do we need this text file for test?
+we don't know when we finish the test!
+

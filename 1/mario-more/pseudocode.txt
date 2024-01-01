@@ -1,0 +1,10 @@
+Prompt user to input a positive integer
+    keep prompting if input number is less than 1 or greater than 8
+
+Iterate number of times stored in 'height'
+    On each iteration
+      print a line of
+        start with spaces := (height - loop number)
+        followed by hashes := loop number 'i'
+        followed by 2 spaces,
+        followed by hashes := loop number 'i'
