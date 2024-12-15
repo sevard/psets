@@ -1,0 +1,3 @@
+
+in the speller.c
+line 75 - it seems like if a text starts with and apostrophe, the program will fail?
